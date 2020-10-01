@@ -198,18 +198,7 @@ http://www.templatemo.com/tm-478-accord
         var map = '';
         var center;
 
-        function initialize() {
-            var mapOptions = {
-                                zoom: 16,
-                                center: new google.maps.LatLng(13.758468,100.567481),
-                                scrollwheel: false
-                            };  
-        
-            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-            google.maps.event.addDomListener(map, 'idle', function() {
-                calculateCenter();
-            });
+<!--paste-->
         
             google.maps.event.addDomListener(window, 'resize', function() {
                 map.setCenter(center);
